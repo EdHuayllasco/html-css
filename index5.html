@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  
+    
+  </head>
+  <body>
+    <h2>AppdeGatos</h2>
+    <main>      
+      <h3>Imagenes de Gatos:</h3>
+      <p>Haz click aqui para ver mas <a href="#" target="_blank" rel="noopener noreferrer"> imagenes de gatos </a></p>
+      <a href="#" target="_blank"><img src="https://sep.yimg.com/ty/cdn/entirelypets/relax-cat-image1.jpg" alt="un lindo gato naranja recostado sobre su espalda"></a>
+      <hr>
+      <h3>Listas  de Gatos</h3>
+
+      <p>Cosas que los gatos <em>aman</em>: </p>
+      <ul>
+        <li>Menta gatuna</li>
+        <li>Apuntadores Laser</li>
+        <li>Lasagna</li>
+        <li><s>Pizza</s></li>
+      </ul>
+      <img src="imagenes/pizza.jpg" alt="pizza"> 
+      <p>Cosas que los gatos <strong>odian</strong>:</p>
+      <ol>
+        <li>Tratamientos antipulgas</li>
+        <li>Truenos</li>
+        <li>Otros gatos</li>
+      </ol>
+      <img src="imagenes/gatos.png">
+      <!-- formulario -->
+      <!-- action va a enviar los datos del submit a enviar respuesta -->
+      <form action="/enviar-respuesta">
+
+        <label for="interior">
+          <!-- radio para seleccionar una opcion o ese circulo que aparece -->
+          <!-- relacioname el label con el input a traves del for y el id -->
+          <!-- name sirve para que solo selecciones una opcion -->
+          <input value="interior" checked type="radio" id="interior" name="interior-exterior"> Interior
+        </label>
+        <!-- break sirve para hacer un salto de linea -->
+        <br>
+        <label for="exterior">
+          <input value="exterior" id="exterior"  type="radio" name="interior-exterior"> Exterio  
+        </label>
+        <br>
+        <br>
+        <!-- casillas de verificacion checks -->
+        <!-- checked permite marcar una opcion por defecto -->
+        <label for="carinoso">
+          <input value="carinoso" checked name="personalidad" id="carinoso" type="checkbox"> Carinoso
+        </label><br>  
+        <label for="perezoso">
+          <input value="perezoso" name="personalidad" type="checkbox" id="perezoso"> Perozoso
+        </label><br>
+        <label for="energico">
+          <input value="energico" name="personalidad" id="energico" type="checkbox"> Energico
+        </label>
+        <br>
+        <!-- text : permite poner un input donde introduzcas texto -->
+        <!-- placeholder texto traslusido para que el usuario sepa como escribir -->
+        <!-- required permite que el campo sea obligatorio -->
+        <input type="text" placeholder="URL de la foto de tu gato" required>
+        <!-- boton tipo submit o sea un boton para enviar -->
+        <br>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
