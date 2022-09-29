@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+  <!-- Metada: elementos que no vemos, archvios css, js lo ruteamos en el head, personalizar titulo-->
   <head>
-  
+  <title>AppdeGatos</title>
     
   </head>
   <body>
@@ -12,21 +13,25 @@
       <a href="#" target="_blank"><img src="https://sep.yimg.com/ty/cdn/entirelypets/relax-cat-image1.jpg" alt="un lindo gato naranja recostado sobre su espalda"></a>
       <hr>
       <h3>Listas  de Gatos</h3>
-
-      <p>Cosas que los gatos <em>aman</em>: </p>
-      <ul>
-        <li>Menta gatuna</li>
-        <li>Apuntadores Laser</li>
-        <li>Lasagna</li>
-        <li><s>Pizza</s></li>
-      </ul>
+      <!-- div agrupa elementos para modificarlos con css -->
+      <div>
+        <p>Cosas que los gatos <em>aman</em>: </p>
+        <ul>
+          <li>Menta gatuna</li>
+          <li>Apuntadores Laser</li>
+          <li>Lasagna</li>
+          <li><s>Pizza</s></li>
+        </ul>
+      </div>
       <img src="imagenes/pizza.jpg" alt="pizza"> 
-      <p>Cosas que los gatos <strong>odian</strong>:</p>
-      <ol>
-        <li>Tratamientos antipulgas</li>
-        <li>Truenos</li>
-        <li>Otros gatos</li>
-      </ol>
+      <div>
+        <p>Cosas que los gatos <strong>odian</strong>:</p>
+        <ol>
+          <li>Tratamientos antipulgas</li>
+          <li>Truenos</li>
+          <li>Otros gatos</li>
+        </ol>
+      </div>
       <img src="imagenes/gatos.png">
       <!-- formulario -->
       <!-- action va a enviar los datos del submit a enviar respuesta -->
@@ -66,5 +71,14 @@
         <button type="submit">Enviar</button>
       </form>
     </main>
+    <!-- pie de pagina -->
+    <footer>
+      <!-- small hacer el texto mas pequeno -->
+      <p>
+        <small>
+          derechos de autor - <a href="google.com" >freecodecamp.org</a>
+        </small> 
+      </p>
+    </footer>
   </body>
 </html>
