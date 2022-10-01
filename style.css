@@ -1,11 +1,23 @@
-h2 {
-  color: blue;
-}
-
-h3 {
-  color: green;
-}
-
-p {
+/* Selectores de tipo h2, h3, etc */
+/* .lista-de-gatos{
+  color: chocolate;
+} */
+/* Selector universal
+*{
   color: purple;
+} */
+h2 {
+  font-size: 30px;
+  color: chocolate;
+  font-family: 'Bungee Spice', cursive;
+}
+h3 {
+  font-size: 25px;
+  font-family: 'Alkalami', serif;
+}
+/* cambiar el estilo de varios tipos */
+p,
+ul,
+ol {
+  font-size: 20px;
 }

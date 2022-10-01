@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!-- Metada: elementos que no vemos, archvios css, js lo ruteamos en el head, personalizar titulo-->
   <head>
     <title>AppdeGatos</title>
-    <!-- conectar ambos archivos -->
-    <link href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Bungee+Spice&family=Passions+Conflict&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
+
   <body>
-    <!-- estilo en linea CSS -->
-    <h2 style="color:blue">AppdeGatos</h2>
+
+    <h2 >AppdeGatos</h2>
     <main>      
       <h3>Imagenes de Gatos:</h3>
       <p>Haz click aqui para ver mas <a href="#" target="_blank" rel="noopener noreferrer"> imagenes de gatos </a></p>
       <a href="#" target="_blank"><img src="https://sep.yimg.com/ty/cdn/entirelypets/relax-cat-image1.jpg" alt="un lindo gato naranja recostado sobre su espalda"></a>
       <hr>
       <h3>Listas  de Gatos</h3>
-      <!-- div agrupa elementos para modificarlos con css -->
       <div>
         <p>Cosas que los gatos <em>aman</em>: </p>
         <ul>
@@ -35,25 +36,14 @@
         </ol>
       </div>
       <img src="imagenes/gatos.png">
-      <!-- formulario -->
-      <!-- action va a enviar los datos del submit a enviar respuesta -->
       <form action="/enviar-respuesta">
 
         <label for="interior">
-          <!-- radio para seleccionar una opcion o ese circulo que aparece -->
-          <!-- relacioname el label con el input a traves del for y el id -->
-          <!-- name sirve para que solo selecciones una opcion -->
           <input value="interior" checked type="radio" id="interior" name="interior-exterior"> Interior
-        </label>
-        <!-- break sirve para hacer un salto de linea -->
-        <br>
+        </label><br>
         <label for="exterior">
           <input value="exterior" id="exterior"  type="radio" name="interior-exterior"> Exterio  
-        </label>
-        <br>
-        <br>
-        <!-- casillas de verificacion checks -->
-        <!-- checked permite marcar una opcion por defecto -->
+        </label><br>
         <label for="carinoso">
           <input value="carinoso" checked name="personalidad" id="carinoso" type="checkbox"> Carinoso
         </label><br>  
@@ -62,20 +52,12 @@
         </label><br>
         <label for="energico">
           <input value="energico" name="personalidad" id="energico" type="checkbox"> Energico
-        </label>
-        <br>
-        <!-- text : permite poner un input donde introduzcas texto -->
-        <!-- placeholder texto traslusido para que el usuario sepa como escribir -->
-        <!-- required permite que el campo sea obligatorio -->
-        <input type="text" placeholder="URL de la foto de tu gato" required>
-        <!-- boton tipo submit o sea un boton para enviar -->
-        <br>
+        </label><br>
+        <input type="text" placeholder="URL de la foto de tu gato" required><br>
         <button type="submit">Enviar</button>
       </form>
     </main>
-    <!-- pie de pagina -->
     <footer>
-      <!-- small hacer el texto mas pequeno -->
       <p>
         <small>
           derechos de autor - <a href="google.com" >freecodecamp.org</a>
